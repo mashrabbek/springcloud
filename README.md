@@ -1,2 +1,1 @@
-# springcloud
-SA course config server
+config server
