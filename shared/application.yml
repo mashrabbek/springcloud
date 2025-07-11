@@ -1,12 +1,11 @@
-app:
-  eureka-server: eureka
-
 eureka:
   client:
     serviceUrl:
       defaultZone: "http://${app.eureka-server}:8761/eureka/"
     initialInstanceInfoReplicationIntervalSeconds: 5
     registryFetchIntervalSeconds: 5
+    registerWithEureka: true
+    fetchRegistry: true
   instance:
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 5
