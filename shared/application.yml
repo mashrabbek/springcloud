@@ -39,3 +39,10 @@ management:
 spring.data.mongodb:
   host: localhost
   port: 27017
+
+spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
