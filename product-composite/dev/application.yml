@@ -1,2 +1,4 @@
 app:
-  eureka-server: eureka
+  eureka-server: localhost
+app:
+  eureka-server: localhost

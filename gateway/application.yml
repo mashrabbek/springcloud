@@ -1,2 +1,7 @@
 app:
   eureka-server: eureka
+
+logging:
+  level:
+    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
+    org.springframework.cloud.gateway: TRACE

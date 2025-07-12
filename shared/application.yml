@@ -1,3 +1,10 @@
+server.error.include-message: always
+server.forward-headers-strategy: framework
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
 eureka:
   client:
     serviceUrl:
@@ -9,3 +16,18 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 5
+
+logging:
+  level:
+    root: INFO
+    com.com.example: DEBUG
+    org.springdoc: DEBUG
+    org.springframework.web.server.adapter.HttpWebHandlerAdapter: TRACE
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+management:
+  endpoint:
+    health.show-details: "ALWAYS"
+    web.exposure.include: "*"
