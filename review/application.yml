@@ -1,2 +1,10 @@
 app:
   eureka-server: eureka
+
+spring:
+  datasource:
+    hikari:
+      initializationFailTimeout: 60000
+    url: jdbc:mysql://localhost/review-db
+    username: user
+    password: pwd
