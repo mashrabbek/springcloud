@@ -1,9 +1,8 @@
 server.error.include-message: always
 server.forward-headers-strategy: framework
 
-spring:
-  main:
-    allow-bean-definition-overriding: true
+spring.main:
+  allow-bean-definition-overriding: true
 
 eureka:
   client:
@@ -36,13 +35,13 @@ management:
     health:
       show-details: "ALWAYS"
 
-spring.data.mongodb:
-  host: localhost
-  port: 27017
+spring.data:
+  mongodb:
+    host: localhost
+    port: 27017
 
-spring:
-  rabbitmq:
-    host: rabbitmq
-    port: 5672
-    username: guest
-    password: guest
+spring.rabbitmq:
+  host: rabbitmq
+  port: 5672
+  username: guest
+  password: guest
